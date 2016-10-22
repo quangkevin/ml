@@ -1,0 +1,16 @@
+<div>
+  <ul class="neural-input">
+    <li *ngFor="let image of images">
+      <img src="{{image.url}}" (click)="select(image)"/>
+    </li>
+  </ul>
+
+  <button class="neural-predict">Predict</button>
+
+  <div class="neural-output">
+  </div>
+
+  <div class="neural-result">
+  </div>
+
+</div>

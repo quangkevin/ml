@@ -1,0 +1,8 @@
+*~
+*.class
+*#
+.gradle/
+build/
+src/main/angular/node_modules/
+src/main/angular/app/**/*js
+src/main/angular/app/**/*map

@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+archivesBaseName = 'ml'
+version = '1.0'
+mainClassName = 'App'
+
+task spark(type:JavaExec) {
+  main = 'App'
+  classpath = sourceSets.main.runtimeClasspath
+  systemProperties System.properties
+}
+
+task train(type:JavaExec) {
+  main = 'ml.nn.DigitRecognition'
+  classpath = sourceSets.main.runtimeClasspath
+  systemProperties System.properties
+}
+
+task showSystemProperty << {
+  assert System.properties.sample == 'Gradle is gr8'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile group: 'com.sparkjava', name: 'spark-core', version: '2.1'
+}
