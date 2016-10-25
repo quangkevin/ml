@@ -123,6 +123,18 @@ public final class MNist {
     return m;
   }
 
+  public static int countImages(File inputFile)
+    throws IOException
+  {
+    try (InputStream in = new GZIPInputStream(new FileInputStream(inputFile))) {
+      byte[] buf = new byte[4];
+      fill(in, buf, 4); // magic number
+
+      fill(in, buf, 4); // length
+      return asInt(buf);
+    }
+  }
+
   private static void fill(InputStream in, byte[] buf, int total)
     throws IOException
   {

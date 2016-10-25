@@ -11,4 +11,96 @@ h2, h3 {
 }
 body {
   margin: 2em;
+  background-color: black;
+  color: white;
+}
+
+.neural {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.neural-input {
+  position: relative;
+  width: 510px;
+  height: 450px;
+}
+
+.neural-input .images {
+  display: flex;
+  width: 450px;
+  height: 450px;
+  flex-flow: row wrap;
+  margin-left: 30px;
+}
+
+.neural-input .images img {
+  border: 1px solid transparent;
+}
+
+.neural-input .images img:hover {
+  border: 1px solid white;
+}
+
+.neural-input .previous-page, .neural-input .next-page {
+  position: absolute;
+  line-height: 420px;
+  width: 30px;
+  font-size: 300%;
+  cursor: pointer;
+}
+
+.previous-page {
+  left: 0px;
+}
+
+.next-page {
+  right: 0px;
+}
+
+.neural-selected .prompt-selection {
+  line-height: 420px;
+  width: 476px;
+  text-align: center;
+  font-size: 200%;
+}
+
+.neural-selected .row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.neural-selected .col {
+  font-size: 8pt;
+  font-family: 'courier';
+  width: 17px;
+  line-height: 16px;
+}
+
+.neural-output {
+  margin: 0px 5px;
+}
+
+.neural-output .col {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 150%;
+}
+
+.arrow {
+  line-height: 420px;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.neural-result {
+  line-height: 420px;
+  font-size: 1500%;
+  margin-left: 5px;
 }

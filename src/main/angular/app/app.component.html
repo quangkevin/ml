@@ -1,16 +1,44 @@
 <div>
-  <ul class="neural-input">
-    <li *ngFor="let image of images">
-      <img src="{{image.url}}" (click)="select(image)"/>
-    </li>
-  </ul>
+  <div class="neural">
+    <div class="neural-input">
+      <div class="previous-page" (click)="previousPage()">&#10218;</div>
+      <div class="next-page" (click)="nextPage()">&#10219;</div>
+      <div class="images">
+        <div *ngFor="let image of visibleImages">
+          <img src="{{image.url}}" (click)="predict(image)"/>
+        </div>
+      </div>
+    </div>
 
-  <button class="neural-predict">Predict</button>
+    <div *ngIf="prediction" class="arrow">&#8658;</div>
 
-  <div class="neural-output">
+    <div class="neural-selected">
+      <div *ngIf="!prediction" class="prompt-selection">
+        choose a number
+      </div>
+
+      <div *ngIf="prediction">
+        <div class="row" *ngFor="let row of prediction.x.val">
+          <div class="col" *ngFor="let col of row">
+            <span *ngIf="0 !== col">{{col | number:'3.0-0'}}</span>
+            <span *ngIf="0 === col">&nbsp;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="prediction" class="arrow">&#8658;</div>
+
+    <div class="neural-output">
+      <div *ngIf="prediction">
+        <div class="row" *ngFor="let row of prediction.y.val">
+          <div class="col" *ngFor="let col of row">{{col | number:'1.4-4'}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="prediction" class="arrow">&#8658;</div>
+
+    <div *ngIf="prediction" class="neural-result">{{getResult(prediction)}}</div>
   </div>
-
-  <div class="neural-result">
-  </div>
-
 </div>

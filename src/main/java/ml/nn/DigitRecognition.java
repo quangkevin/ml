@@ -67,6 +67,20 @@ public class DigitRecognition {
     return MNist.matrixToImage(readTestInput(index));
   }
 
+  public static int countTestImages()
+    throws Exception
+  {
+    return MNist.countImages(TEST_INPUT_FILE);
+  }
+
+  public static Tuple<Matrix> predict(int index)
+    throws Exception
+  {
+    Matrix input = readTestInput(index);
+    Matrix result = new NeuralNetwork(NETWORK_FILE).predict(asNeuralInput(input));
+    return new Tuple<Matrix>(input, result);
+  }
+
   private static Matrix readTestInput(int index)
     throws Exception
   {
