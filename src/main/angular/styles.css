@@ -38,7 +38,7 @@ body {
   border: 1px solid transparent;
 }
 
-.neural-input .images img:hover {
+.neural-input .images img:hover, .neural-input .images img.selected {
   border: 1px solid white;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .neural-selected .col {
-  font-size: 8pt;
+  font-size: 6pt;
   font-family: 'courier';
   width: 17px;
   line-height: 16px;
@@ -84,8 +84,7 @@ body {
 .neural-output .col {
   width: 100px;
   height: 50px;
-  background-color: white;
-  color: black;
+  border: 1px solid white;
   border-radius: 25px;
   line-height: 50px;
   text-align: center;

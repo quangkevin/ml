@@ -5,7 +5,7 @@
       <div class="next-page" (click)="nextPage()">&#10219;</div>
       <div class="images">
         <div *ngFor="let image of visibleImages">
-          <img src="{{image.url}}" (click)="predict(image)"/>
+          <img src="{{image.url}}" [class.selected]="image===selectedImage" (click)="predict(image)"/>
         </div>
       </div>
     </div>

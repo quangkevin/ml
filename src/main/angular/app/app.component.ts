@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
   pageIndex: number = 0;
   pageSize: number = 225;
   prediction: Tuple<Matrix>;
+  selectedImage: Image;
 
   constructor(private imageService: ImageService) {}
 
@@ -46,6 +47,7 @@ export class AppComponent implements OnInit {
 
   predict(image: Image) {
     this.imageService.predictImage(image).subscribe(result => {
+      this.selectedImage = image;
       this.prediction = result;
     });
   }
