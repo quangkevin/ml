@@ -189,7 +189,7 @@ public class NeuralNetwork {
 
     zip(bs, ws, (b, w) -> {
         zs.add(w.dot(get(as, -1)).incrementBy(b));
-        as.add(new Matrix(get(zs, -1)).set(ActivationFunctions::sigmoid));
+        as.add(new Matrix(get(zs, -1)).set(activationFunction));
       });
 
     Matrix delta = cost.delta(get(zs, -1), get(as, -1), xy.y);

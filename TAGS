@@ -1,0 +1,217 @@
+
+src/main/angular/styles.css,98
+h2,7,106
+.neural-input .images img:hover,hover41,581
+.neural-input .previous-page,page45,681
+
+src/main/angular/typings/globals/node/index.d.ts,35
+    function internal(2576,109876
+
+src/main/angular/typings/globals/jasmine/index.d.ts,457
+    function any(49,2569
+    function anything(50,2605
+    function arrayContaining(51,2635
+    function objectContaining(52,2697
+    function createSpy(53,2759
+    function createSpyObj(54,2825
+    function createSpyObj<createSpyObj55,2895
+    function pp(56,2966
+    function getEnv(57,3003
+    function addCustomEqualityTester(58,3031
+    function addMatchers(59,3113
+    function stringMatching(60,3179
+    function stringMatching(61,3226
+
+src/main/angular/typings/globals/core-js/index.d.ts,1468
+    function apply(857,32251
+    function construct(858,32344
+    function defineProperty(859,32439
+    function deleteProperty(860,32548
+    function enumerate(861,32625
+    function get(862,32685
+    function getOwnPropertyDescriptor(863,32763
+    function getPrototypeOf(864,32861
+    function has(865,32908
+    function isExtensible(866,32974
+    function ownKeys(867,33023
+    function preventExtensions(868,33078
+    function set(869,33132
+    function setPrototypeOf(870,33226
+        function apply(1290,53616
+        function construct(1291,53713
+        function defineProperty(1292,53795
+        function deleteProperty(1293,53908
+        function enumerate(1294,53989
+        function get(1295,54053
+        function getOwnPropertyDescriptor(1296,54135
+        function getPrototypeOf(1297,54237
+        function has(1298,54288
+        function has(1299,54353
+        function isExtensible(1300,54418
+        function ownKeys(1301,54471
+        function preventExtensions(1302,54530
+        function set(1303,54588
+        function setPrototypeOf(1304,54686
+    function setTimeout(1468,62671
+    function setInterval(1470,62750
+    function setImmediate(1472,62830
+    function clearImmediate(1474,62899
+    function $for<$for1476,62951
+    function isIterable(1478,63006
+    function getIterator<getIterator1480,63053
+    function addLocale(1487,63199
+    function locale(1489,63267
+    function delay(1491,63312
+
+src/main/angular/typings/modules/lodash/index.d.ts,120
+var _: _.LoDashStatic;LoDashStatic236,6758
+namespace _ 238,6782
+export 18555,451500
+interface Map<K,K18558,451557
+
+src/main/angular/app/main.ts,22
+const platform 5,120
+
+src/main/angular/app/matrix.ts,45
+export class Matrix 1,0
+  constructor(2,22
+
+src/main/angular/app/image.service.ts,195
+@Injectable(12,325
+export class ImageService 13,339
+  constructor(14,367
+  getImages(16,404
+  predictImage(20,523
+  private extractImageData(24,683
+  private extractImagePrediction(30,840
+
+src/main/angular/app/tuple.ts,20
+  constructor(2,24
+
+src/main/angular/app/image.ts,44
+export class Image 1,0
+  constructor(2,21
+
+src/main/java/math/Matrix.java,980
+public class Matrix 6,96
+  private double[][] val;Matrix.val7,118
+  public Matrix(Matrix.Matrix9,145
+  public Matrix(Matrix.Matrix13,218
+  public Matrix(Matrix.Matrix20,443
+  public Matrix transpose(Matrix.transpose24,493
+  public Matrix incrementBy(Matrix.incrementBy29,606
+  public Matrix decrementBy(Matrix.decrementBy33,702
+  public Matrix multiplyBy(Matrix.multiplyBy37,798
+  public Matrix multiplyBy(Matrix.multiplyBy41,893
+  public Matrix add(Matrix.add45,978
+  public Matrix subtract(Matrix.subtract52,1135
+  public Matrix multiply(Matrix.multiply59,1297
+  public Matrix dot(Matrix.dot64,1421
+  public double scalar(Matrix.scalar84,2001
+  public int getRow(Matrix.getRow94,2284
+  public int getColumn(Matrix.getColumn95,2329
+  public Matrix set(Matrix.set97,2400
+  public Matrix set(Matrix.set102,2495
+  public Matrix set(Matrix.set112,2720
+  public double get(Matrix.get122,2936
+  public String toString(Matrix.toString124,2993
+
+src/main/java/collection/Tuple.java,130
+public class Tuple<Tuple3,21
+  public final T x;Tuple.x4,45
+  public final T y;Tuple.y5,65
+  public Tuple(Tuple.Tuple7,86
+
+src/main/java/ml/data/MNist.java,591
+public final class MNist 14,279
+  private MNist(MNist.MNist15,306
+  public static Matrix[] readInput(MNist.readInput17,328
+  public static Matrix readInput(MNist.readInput52,1209
+  public static int[] readLabels(MNist.readLabels82,1934
+  public static BufferedImage matrixToImage(MNist.matrixToImage104,2453
+  public static Matrix imageToMatrix(MNist.imageToMatrix115,2802
+  public static int countImages(MNist.countImages126,3101
+  private static void fill(MNist.fill138,3400
+  private static int asInt(MNist.asInt147,3592
+  private static void skip(MNist.skip151,3734
+
+src/main/java/ml/nn/CrossEntropyCostFunction.java,163
+public class CrossEntropyCostFunction 5,37
+  public double cost(CrossEntropyCostFunction.cost6,102
+  public Matrix delta(CrossEntropyCostFunction.delta21,495
+
+src/main/java/ml/nn/ICostFunction.java,37
+public interface ICostFunction 5,37
+
+src/main/java/ml/nn/ActivationFunctions.java,379
+public final class ActivationFunctions 3,16
+  private ActivationFunctions(ActivationFunctions.ActivationFunctions4,57
+  public static double sigmoid(ActivationFunctions.sigmoid6,93
+  public static double dsigmoid(ActivationFunctions.dsigmoid10,180
+  public static double tanh(ActivationFunctions.tanh14,271
+  public static double dtanh(ActivationFunctions.dtanh18,341
+
+src/main/java/ml/nn/DigitRecognition.java,1373
+public class DigitRecognition 11,157
+  private static final File DATA_DIR DigitRecognition.DATA_DIR12,189
+  private static final File TRAINING_INPUT_FILE DigitRecognition.TRAINING_INPUT_FILE13,269
+  private static final File TRAINING_LABEL_FILE DigitRecognition.TRAINING_LABEL_FILE14,369
+  private static final File TEST_INPUT_FILE DigitRecognition.TEST_INPUT_FILE15,469
+  private static final File TEST_LABEL_FILE DigitRecognition.TEST_LABEL_FILE16,564
+  private static final File NETWORK_FILE DigitRecognition.NETWORK_FILE17,659
+  public static void main(DigitRecognition.main19,738
+  public static void train(DigitRecognition.train26,835
+  public static void test(DigitRecognition.test43,1402
+  public static java.awt.image.BufferedImage readTestImage(DigitRecognition.readTestImage64,2018
+  public static int countTestImages(DigitRecognition.countTestImages70,2172
+  public static Tuple<Matrix> predict(DigitRecognition.predict76,2287
+  private static Matrix readTestInput(DigitRecognition.readTestInput84,2535
+  private static List<Tuple<Matrix>> neuralTuples(DigitRecognition.neuralTuples90,2666
+  private static Matrix asNeuralInput(DigitRecognition.asNeuralInput100,2946
+  private static Matrix asNeuralOutput(DigitRecognition.asNeuralOutput110,3244
+  private static int fromNeuralOutput(DigitRecognition.fromNeuralOutput117,3383
+
+src/main/java/ml/nn/QuadraticCostFunction.java,340
+public class QuadraticCostFunction 7,80
+  private DoubleFunction<Double> dactivationFunction;QuadraticCostFunction.dactivationFunction8,142
+  public QuadraticCostFunction(QuadraticCostFunction.QuadraticCostFunction10,197
+  public double cost(QuadraticCostFunction.cost14,331
+  public Matrix delta(QuadraticCostFunction.delta25,586
+
+src/main/java/ml/nn/NeuralNetwork.java,1208
+public class NeuralNetwork 21,465
+  private int layers;NeuralNetwork.layers22,494
+  private List<Matrix> bs;NeuralNetwork.bs23,516
+  private List<Matrix> ws;NeuralNetwork.ws24,543
+  private ICostFunction cost NeuralNetwork.cost25,570
+  private DoubleFunction<Double> activationFunction NeuralNetwork.activationFunction26,633
+  private DoubleFunction<Double> dactivationFunction NeuralNetwork.dactivationFunction27,717
+  public NeuralNetwork(NeuralNetwork.NeuralNetwork29,804
+  public NeuralNetwork(NeuralNetwork.NeuralNetwork45,1329
+  public void train(NeuralNetwork.train51,1406
+  public void train(NeuralNetwork.train60,1716
+  public Matrix predict(NeuralNetwork.predict86,2501
+  public void save(NeuralNetwork.save90,2569
+  public void restore(NeuralNetwork.restore116,3283
+  private void sgd(NeuralNetwork.sgd147,4165
+  private Matrix feedforward(NeuralNetwork.feedforward168,4954
+  private Tuple<List<Matrix>> backprop(NeuralNetwork.backprop181,5198
+  private <T> void zip(NeuralNetwork.zip215,6180
+  private List<Matrix> zeros(NeuralNetwork.zeros221,6349
+  private Matrix get(NeuralNetwork.get231,6548
+  private Matrix normalize(NeuralNetwork.normalize238,6698
+
+src/main/java/App.java,277
+public class App 10,160
+  public static void main(App.main11,179
+  private static Object predictTestImage(App.predictTestImage19,467
+  private static Object readTestImageCount(App.readTestImageCount27,727
+  private static Object readTestImage(App.readTestImage39,1002
+
+src/main/angular/app/rxjs-operators.ts,0
+
+src/main/angular/app/app.component.ts,0
+
+src/main/angular/app/app.module.ts,0
+
+src/main/angular/typings/index.d.ts,0
